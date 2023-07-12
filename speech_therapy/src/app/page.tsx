@@ -1,9 +1,14 @@
-import Image from 'next/image'
+import Image from "next/image";
+import {AddTask} from "./components/AddTask";
+import Navbar from "./components/Navbar";
+import TaskList from "./components/TaskList";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-     <h1>Welcome to Stamurai App</h1>
+    <main className="">
+     
+      <AddTask />
+      <TaskList/>
     </main>
-  )
+  );
 }
